@@ -1,0 +1,521 @@
+html {
+    font-family:"Quicksand", sans-serif;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+ display: flex;
+ justify-content: center;
+ background-color: #232323;
+ padding: 2rem 1rem;
+}
+
+.logo h2 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: aliceblue;
+    padding: 1rem 0 1rem 0;
+}
+
+.navigation {
+    background-color: #2dfcb4;
+    width: 100%;
+    padding: 1rem 0rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    padding: 0;
+}
+
+.navigation li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.navigation a {
+    color: #232323;
+    font-size: 1.12rem;
+    text-decoration: none;
+}
+    
+.navigation a:hover {
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+}
+
+.banner {
+ display: flex;
+ justify-content: center;
+}
+
+.banner .image {
+    background-image: url(./resources/milad-fakurian-wNsHBf_bTBo-unsplash-new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.banner .mission {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+    text-align: center;
+    width: 60%;
+    background-color: rgba(35,35,35,.7);
+    padding: 4rem;
+}
+
+.banner .mission h1, h4{
+    color: white;
+    margin: 0;
+}
+
+.banner .mission h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.banner .mission h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.portfolio {
+    background-color: #232323;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    width: 100%;
+    color: white;
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.portfolio .content, .etps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.portfolio h2 {
+    font-size: 2.2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #2dfcb4;
+    text-underline-offset: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio p {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    width: 100%;   
+    padding: 1rem 6rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio .etps {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.portfolio .etps .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 65%;
+}
+
+.portfolio img {
+    width: 12rem;
+}
+
+.portfolio .etps .row h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    padding: 4rem 0;
+    margin: 0;
+    color: #232323;
+}
+
+.team .content {
+    text-align: center;
+    width: 100%;
+}
+
+.team .content h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #2dfcb4;
+    text-underline-offset: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.team .staff {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 4rem;
+}
+
+.team .staff img {
+ width: 20rem;
+}
+
+.team h3 {
+    color: #232323;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+} 
+
+.team h4 {
+    color: #232323;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0 0 1rem 0;
+} 
+
+footer {
+    background-color: #232323;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+footer p {
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+
+/* Tablett */
+
+@media only screen and (max-width: 768px)  {
+    .logo {
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+
+    .logo h2 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        width: 100%;
+        padding: 1rem 1rem;
+    }
+
+    .navigation ul {
+        padding: 0;
+        width: 100%;
+    }
+
+    .navigation li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation a {
+        font-size: 1.25rem;
+    }
+
+    .banner .image {
+        background-image: url(./resources/milad-fakurian-wNsHBf_bTBo-unsplash-new.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        width: 100%;
+        height: 30rem;
+        margin: 0;
+        } 
+    
+    .banner .mission {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 85%;
+        padding: 2rem;
+    }
+    
+    .banner .mission h1 {
+        font-size: 2.25rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+        margin-bottom: 0;
+    }
+
+    .banner .mission h4 {
+        font-size: 1.12rem;
+    }
+    
+    .portfolio .content, .etps {
+        width: 100%;
+    }
+    
+    .portfolio h2 {
+        font-size: 2rem;
+    }
+    
+    .portfolio p {
+        padding: 1rem 2rem;
+    }
+    
+    .portfolio .etps .row {
+        width: 80%;
+    }
+    
+    .team {
+        width: 100%;
+        padding: 4rem 0;
+    }
+    
+    .team .content {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .team .content h2 {
+        font-size: 2.2rem;
+    }
+    
+    .team .staff {
+        justify-content:centers;
+        padding: 2rem 0;
+    }
+    
+    .team .staff img {
+     width: 15rem;
+    }
+    
+    .team h3 {
+        font-size: 1.5rem;
+    } 
+    
+    .team h4 {
+        font-size: 1rem;
+        padding: 0;
+    } 
+    
+    footer {
+        padding: 1.5rem;
+    }
+    
+    footer p {
+        color: white;
+        font-weight: 500;
+        font-size: 1rem;
+        padding-left: 2rem;
+    }
+     
+
+}
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 480px)  {
+
+    .logo {
+        text-align: center;
+        padding: 0rem 3rem;
+    }
+
+    .logo h2 {
+        font-size: 1.5rem;
+    }
+
+    .navigation {
+        width: 100%;
+        padding: 1rem 0rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navigation ul {
+        padding: 1rem 0.5rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navigation li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation a {
+        font-size: 0.9rem;
+    }
+    
+    .banner .image {
+    background-image: url(./resources/milad-fakurian-wNsHBf_bTBo-unsplash-new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 100%;
+    height: 20rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    } 
+
+.banner .mission {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 85%;
+    padding: 2rem;
+}
+
+.banner .mission h1 {
+    font-size: 1.875rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.banner .mission h4 {
+    display: none;
+}
+
+.portfolio {
+    padding: 3rem 0;
+}
+
+.portfolio .content, .etps {
+    width: 100%;
+}
+
+.portfolio h2 {
+    font-size: 1.75rem;
+}
+
+.portfolio p {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.portfolio .etps .row {
+    width: 90%;
+}
+
+.portfolio img {
+    width: 9rem;
+}
+
+.team {
+    padding: 2rem 0;
+}
+
+.team .content h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.team .staff {
+    padding: 2rem 0;
+}
+
+.team h3 {
+    font-size: 1.75rem;
+} 
+
+.team h4 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+} 
+
+
+footer {
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+}
